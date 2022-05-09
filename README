@@ -1,0 +1,27 @@
+zap
+===
+
+macOS does not currently have a publisher-supported way to easily remove the small pieces of gunk your apps leave behind. `zap` is a way to remove unwanted macOS apps, along with their preference files, etc. It is meant as an open source, CLI-based alternative to proprietary "cleaner" apps.
+
+Please note this software is provided "as is", without warranty of any kind.
+
+
+Usage
+-----
+
+1. Clone this repo.
+
+2. (Optional) Set permissions and view the help text.
+
+    $ chmod 700 ./zap
+    $ ./zap --help
+
+3. Run `zap`.
+
+    ## In standard mode
+    $ ./zap /Applications/Your-App.app
+
+    ## In verbose mode
+    $ ./zap /Applications/Your-App.app --verbose
+
+4. (Important) Review the deleted files before emptying your trash.
